@@ -7,8 +7,9 @@ import ExerciseDetail from './pages/ExerciseDetail';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Quotes from './pages/Quotes';
+import WorkoutAI from './pages/WorkoutAI';
 import Calculator from './pages/Calculator'
+import LearnWorkout from './pages/LearnWorkout';
 
 
 
@@ -26,8 +27,9 @@ const App = () => {
       <Routes>
       <Route path="/" element={<Home setProgress={(progress)=>{setProgress(progress)}}/>} />
       <Route path="/exercise/:id" element={<ExerciseDetail setProgress={(progress)=>{setProgress(progress)}}/>} />
-      <Route path="/motivation" element={<Quotes setProgress={(progress)=>{setProgress(progress)}}/>} />
+      <Route path="/workoutai" element={<WorkoutAI setProgress={(progress)=>{setProgress(progress)}}/>} />
       <Route path="/calculator" element={<Calculator setProgress={(progress)=>{setProgress(progress)}}/>} />
+      <Route path="/learn/:workoutId" element={<LearnWorkout setProgress={(progress)=>{setProgress(progress)}}/>} />
       </Routes>
       <Footer />
     </Box>
